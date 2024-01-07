@@ -1,6 +1,6 @@
-import { createClient, sql } from '@vercel/postgres';
+import { createClient } from '@vercel/postgres';
 
-export async function load({ locals }) {
+export async function load() {
 	const client = createClient();
 	const res = await client.sql`SELECT * FROM users)`;
 	return { res };
