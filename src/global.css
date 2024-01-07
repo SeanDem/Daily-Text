@@ -1,0 +1,101 @@
+/* Base Styles */
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #1a1a1a; /* Dark background */
+	color: white; /* Light text for contrast */
+}
+
+/* Utility Classes */
+.container {
+	max-width: 500px;
+	margin: 20px;
+}
+
+.rounded {
+	border-radius: 15px;
+}
+
+/* Header */
+header {
+	background-color: #9b5de5; /* Purple */
+	padding: 20px 0;
+	text-align: center;
+	border-radius: 0 0 15px 15px;
+}
+
+/* Main Content */
+main {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+h2 {
+	background: linear-gradient(to right, #f15bb5, #fee440, #00f5d4, #00bbf9, #9b5de5);
+	background-clip: text;
+	color: transparent;
+	font-weight: bold;
+}
+
+/* Section Styles */
+.section {
+	margin-bottom: 30px;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+.section:nth-child(odd) {
+	background-color: #f15bb5; /* Pink */
+}
+
+.section:nth-child(even) {
+	background-color: #00bbf9; /* Blue */
+}
+
+/* Footer */
+footer {
+	background-color: #00f5d4; /* Mint */
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 15px 15px 0 0;
+}
+
+/* Buttons */
+button {
+	background-color: #fee440; /* Yellow */
+	color: #1a1a1a; /* Dark text for contrast */
+	border: none;
+	padding: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #f15bb5; /* Pink */
+}
+button:disabled {
+	background-color: #ddd;
+}
+
+/* Forms */
+input[type='text'],
+input[type='email'],
+textarea {
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+	background-color: #333; /* Darker input fields */
+	color: white; /* Light text */
+}
+
+/* Cards */
+.card {
+	background-color: #292929; /* Dark card background */
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}

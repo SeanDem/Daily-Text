@@ -31,6 +31,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@sveltejs/adapter-vercel": "^4.0.4"
+		"@sveltejs/adapter-vercel": "^4.0.4",
+		"@vercel/postgres": "^0.5.1"
 	}
 }
