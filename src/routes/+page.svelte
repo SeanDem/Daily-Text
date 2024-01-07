@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { createClient } from '@vercel/postgres';
-	import '../global.css';
 	import type { User } from '$lib';
+	import '../global.css';
 	export let data;
 	$: disabled = !user.name || !user.phone || !user.zip;
 	let removePhone = '';
@@ -12,17 +11,17 @@
 	};
 
 	async function addUser() {
-		const client = createClient();
-		const res =
-			await client.sql`INSERT INTO users (name, phone, zip) VALUES (${user.name}, ${user.phone}, ${user.zip})`;
+		// const client = createClient();
+		// const res =
+		// 	await client.sql`INSERT INTO users (name, phone, zip) VALUES (${user.name}, ${user.phone}, ${user.zip})`;
 		user.name = '';
 		user.phone = '';
 		user.zip = '';
 	}
 
 	function removeUser() {
-		const client = createClient();
-		client.sql`DELETE FROM users WHERE phone = ${removePhone}`;
+		// const client = createClient();
+		// client.sql`DELETE FROM users WHERE phone = ${removePhone}`;
 	}
 </script>
 
